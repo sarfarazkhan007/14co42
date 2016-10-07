@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Student Registration</title>
+    
+ </head>
+ <body>
+ 	<form method="post" action="printinfo.php">
+        
+ 	<fieldset>
+ 		<legend>
+ 			PERSONAL INFORMATION
+ 		</legend>
+ 		<label>ROLL NO:</label>
+ 		<input type="text" name="rollno" id="rollno" class="form-input" required="required">
+ 		<br><br>
+        
+ 		<label>NAME</label>
+ 		<input type="text" name="name" id="sname" class="form-input" required="required">
+ 		<br><br>
+        
+ 		<label>GENDER</label>
+ 		<input type="radio" name="gender" id="male" class="form-input" value="male" required="required">
+ 		<label for="male">M</label>
+ 		<input type="radio" name="gender" id="female" class="form-input" value="female" required="required">
+ 		<label for="female">F</label>
+ 		<br><br>
+        
+        
+ 		<label>ADDRESS</label>
+ 		<textarea cols="15" rows="5" name="address" id="address" class="form-input" required="required"></textarea>
+ 		<br><br>
+        
+ 		<label> date of birth </label>
+ 		<input type="name" name="dob" id="dob" class="form-input" required="required">
+ 		<br><br>
+	</fieldset>
+        
+	<br><br>
+        
+	<fieldset>
+		<legend>Academic Information</legend>
+		<label>Semester</label>
+		<select name="sem" id="sem" size="1" class="form-input" required="required">
+			<option value="">-----</option>
+			<option value="1">I</option>
+			<option value="2">II</option>
+			<option value="3">III</option>
+			<option value="4">IV</option>
+			<option value="5">V</option>
+			<option value="6">VI</option>
+			<option value="7">VII</option>
+			<option value="8">VIII</option>
+        </select>
+		<br><br>
+        
+        
+		<label>Email</label>
+		<input type="email" name="email" id="email" class="form-input" required="required">
+		<br><br>
+        
+		<label>Department</label>
+		<select name="dep" id="dep" size="1" class="form-input" required="required">
+			<option value="">-----</option>
+			<option value="1">civil</option>
+			<option value="2">comp</option>
+			<option value="3">extc</option>
+			<option value="4">IT</option>
+			<option value="5">mech</option>
+			<option value="6">elex</option>
+		</select>
+        
+		<br><br>
+        
+		<label>Batch</label>
+		<select name="batch" id="batch" size="1" class="form-input" required="required">
+			<option value="">-----</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+
+		</select>	
+			
+
+	</fieldset>
+        
+	<br><br>
+        
+	<input type="submit" name="submit" id="submit" class="form-button" required="required" value="Submit">
+ 	
+ 		
+ 	</form>
+     <script src="js/validate.js"></script>
+ </body>
+ </html>
